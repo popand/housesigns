@@ -6,11 +6,12 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <div className="relative bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Main content section with potential overlap */}
-        <div className="relative z-20">
+      {/* Content container with right padding for image */}
+      <div className="max-w-7xl mx-auto">
+        {/* Main content section */}
+        <div className="relative z-20 px-4 sm:px-6 lg:px-8">
           <main className="pt-10 pb-8 sm:pt-12 sm:pb-16 md:pt-16 lg:pt-20 xl:pt-28">
-            <div className="lg:max-w-[60%]">
+            <div className="lg:max-w-[55%]">
               {/* Frosted glass effect for text overlap */}
               <div className="relative">
                 <div className="absolute inset-0 backdrop-blur-md bg-white/70 rounded-2xl -m-4 p-4 lg:hidden" />
@@ -44,16 +45,17 @@ export default function Hero() {
           </main>
         </div>
 
-        {/* Image section aligned with the Order button */}
-        <div className="absolute top-0 right-0 w-[45%] h-full">
+        {/* Image section */}
+        <div className="absolute top-0 right-0 w-[50%] h-full">
           <div className="relative h-full w-full">
             {/* Gradient overlay for better text readability */}
-            <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent z-10 lg:hidden" />
+            <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/20 to-transparent z-10 lg:hidden" />
+            <div className="absolute inset-0 bg-gradient-to-r from-white via-white to-transparent w-32 z-10" />
             <Image
               src="/images/real-estate-sign.jpg"
               alt="Modern real estate sign showcasing a property with pool"
               fill
-              className="object-cover object-center"
+              className="object-cover object-right"
               priority
               quality={100}
             />

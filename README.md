@@ -2,6 +2,7 @@
 
 HouseSigns is a modern e-commerce platform designed specifically for real estate professionals to order and customize their property signs. Built with Next.js 14, this platform offers an intuitive sign designer, ready-to-use templates, and a streamlined ordering process. Real estate agents can easily create, customize, and order high-quality signs for listings, open houses, and more, with options for different materials, sizes, and quick delivery. Whether you need a single "For Sale" sign or a bulk order of custom-designed signs for your agency, HouseSigns provides a seamless, professional solution.
 
+![HouseSigns Platform Screenshot](public/images/main.png)
 
 ## Features
 
