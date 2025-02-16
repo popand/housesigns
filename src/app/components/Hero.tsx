@@ -46,16 +46,13 @@ export default function Hero() {
         </div>
 
         {/* Image section */}
-        <div className="absolute top-0 right-0 w-[50%] h-full">
-          <div className="relative h-full w-full">
-            {/* Gradient overlay for better text readability */}
-            <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/20 to-transparent z-10 lg:hidden" />
-            <div className="absolute inset-0 bg-gradient-to-r from-white via-white to-transparent w-32 z-10" />
+        <div className="absolute top-0 right-0 w-[50%] h-full overflow-hidden">
+          <div className="relative h-full w-full rounded-l-[2rem] overflow-hidden">
             <Image
               src="/images/real-estate-sign.jpg"
               alt="Modern real estate sign showcasing a property with pool"
               fill
-              className="object-cover object-right"
+              className="object-cover object-left"
               priority
               quality={100}
             />
